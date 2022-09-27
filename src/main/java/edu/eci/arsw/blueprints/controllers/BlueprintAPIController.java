@@ -14,6 +14,7 @@ import edu.eci.arsw.blueprints.controllers.model.Blueprint;
 import edu.eci.arsw.blueprints.controllers.persistences.BlueprintPersistenceException;
 import edu.eci.arsw.blueprints.controllers.services.BlueprintsServices;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -23,6 +24,7 @@ import org.springframework.web.bind.annotation.*;
  *
  * @author hcadavid
  */
+
 @RestController //los @RestController anotación en Spring es esencialmente una combinación de @Controller y @ResponseBody. Esta anotación se agregó durante la Spring 4.0 para eliminar la redundancia de declarar el @ResponseBody anotación en su controlador.
 @RequestMapping(value = "/blueprints") //Se utiliza para asignar solicitudes web a clases de controlador específicas y/o métodos de controlador. @RequestMappingse puede aplicar a la clase de controlador, así como a los métodos.
 public class BlueprintAPIController {

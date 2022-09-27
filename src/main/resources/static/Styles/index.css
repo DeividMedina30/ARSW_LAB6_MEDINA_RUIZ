@@ -1,0 +1,10 @@
+.container{
+    justify-content: left;
+    margin-left: 40px; 
+    margin-top: 20px;
+}
+
+.table{
+    max-width: 40%;
+
+}
