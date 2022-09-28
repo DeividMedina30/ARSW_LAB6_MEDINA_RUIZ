@@ -1,6 +1,11 @@
 ### Escuela Colombiana de Ingeniería
 ### Arquiecturas de Software
 
+### Integrantes
+
+- Cristian Camilo Ruiz
+- Deivid Sebastián Medina
+
 ## Construción de un cliente 'grueso' con un API REST, HTML5, Javascript y CSS3. Parte I.
 
 ### Trabajo individual o en parejas. A quienes tuvieron malos resultados en el parcial anterior se les recomienda hacerlo individualmente.
@@ -33,6 +38,8 @@
         <groupId>org.webjars</groupId>
         <artifactId>jquery</artifactId>
         <version>3.1.0</version>
+
+
     </dependency>                
 
     ```
