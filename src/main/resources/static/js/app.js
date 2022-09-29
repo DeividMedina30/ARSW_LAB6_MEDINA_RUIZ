@@ -25,15 +25,37 @@ var modulo = (function(){
     }
 
     var _setTable = function(blueprintsArray){
-        blueprintsArray.map(blueprint => $("table tbody").append("<tr><td>"+ (blueprintsArray.indexOf(blueprint)+1) +"</td><td>" + blueprint[0] + "</td><td>" + blueprint[1] + "</td><td><button type='button' class='btn btn-outline-success' id="+blueprint[0] +" "+ "type='button' onclick=module.getBluePrintToShow(this)>Open</button></td></tr>"));
-                var numArray = blueprintsArray.map(blueprint => blueprint[1]);
+        console.log(blueprintsArray[0])
+        blueprintsArray.map(blueprint => $("table tbody").append("<tr><td>"+ (blueprintsArray.indexOf(blueprint)+1) +"</td><td>" + blueprint[0] + "</td><td>" + blueprint[1] + "</td><td><button type='button' class='btn btn-outline-success' id="+blueprint[0] +" "+ "type='button' onclick=modulo.getBluePrintToShow(this)>Open</button></td></tr>"));
+        var numArray = blueprintsArray.map(blueprint => blueprint[1]);
         $("#totalPoints").text(" Total user points: " + numArray.reduce((previousValue, currentValue) => previousValue + currentValue, 0));
     }
 
     var getBluePrintToShow = function(button){
-        /*idBlueprint = button.id;
-        console.log("ID DEL PLANO " + idBlueprint)
-        _module.getBlueprintsByNameAndAuthor(_author,idBlueprint,_drawInCanvas);*/
+        idBlueprint = button.id;
+        setnameBlueprint(idBlueprint)
+        _modulo.getBlueprintsByNameAndAuthor(_author,idBlueprint,_drawInCanvas);
+    }
+
+    var _drawInCanvas = function(pointsOne){
+        var canvas = document.getElementById('idCnavas');
+        var ctx = canvas.getContext('2d');
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.beginPath(); // Inicia una nueva ruta al vaciar la lista de subrutas.
+        //Dibujando lineas de acuerdo a lso puntos
+        ctx.moveTo(pointsOne.points[0].x, pointsOne.points[0].y); //Arranca desde el primer punto
+
+        for(var i = 1; i < pointsOne.points.length; i++){
+            ctx.lineTo(pointsOne.points[i].x, pointsOne.points[i].y);
+        }
+
+        //ctx.lineTo(pointsOne.points[0].x, pointsOne.points[0].y);
+        ctx.strokeStyle = "black";
+        ctx.stroke();
+    }
+
+    var setnameBlueprint = function(nameBluePrint){
+        $("#idCurrentBluePrint").text("Current Blueprint: "+ nameBluePrint)
     }
 
     return{
