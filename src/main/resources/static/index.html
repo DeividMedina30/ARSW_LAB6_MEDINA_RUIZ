@@ -26,20 +26,24 @@
             </div>
             <button type="button" class="btn btn-primary mb-2" id="submitButton" onclick="modulo.getBluePrintsByAuthor()">Get Blueprints</button>
         </form><br>
-        <h1 id="idNameBluePrintTitulo"></h1><br>
-        <table class="table" id="idTableBluePrints">
-            <thead>
-              <tr>
-                <th scope="col">#</th>
-                <th scope="col">Blueprint name</th>
-                <th scope="col">Number of points</th>
-                <th scope="col"><button type="button" class="btn btn-outline-success">Open</button></th>
-              </tr>
-            </thead>
-            <tbody>
-            </tbody>
+        <div class="contenedor">
+          <h1 class="t1" id="idNameBluePrintTitulo"></h1><br>
+          <h1 class="t2" id="idCurrentBluePrint">Current</h1>
+          <table class="table" id="idTableBluePrints">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Blueprint name</th>
+                  <th scope="col">Number of points</th>
+                  <th scope="col"><button type="button" class="btn btn-outline-success">Open</button></th>
+                </tr>
+              </thead>
+              <tbody>
+              </tbody>
           </table><br></br> 
-          <h1 id="totalPoints"></h1>
+          <canvas class="classCanvas" id="idCnavas"></canvas>
+          <h1 class="t3" id="totalPoints"></h1>
+        </div>
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
