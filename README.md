@@ -76,6 +76,12 @@
     ```
     2. Al abrir la consola de desarrollador del navegador, NO deben aparecer mensajes de error 404 (es decir, que las librerías de JavaScript se cargaron correctamente).
 
+Rta//
+
+![](img/Front-End%20-%20Vistas/Dos.PNG)
+
+![](img/Front-End%20-%20Vistas/Uno.PNG)
+
 ## Front-End - Lógica
 
 1. Ahora, va a crear un Módulo JavaScript que, a manera de controlador, mantenga los estados y ofrezca las operaciones requeridas por la vista. Para esto tenga en cuenta el [patrón Módulo de JavaScript](https://toddmotto.com/mastering-the-module-pattern/), y cree un módulo en la ruta static/js/app.js .
@@ -123,3 +129,9 @@
 13. Modifique el código de app.js de manera que sea posible cambiar entre el 'apimock' y el 'apiclient' con sólo una línea de código.
 
 14. Revise la [documentación y ejemplos de los estilos de Bootstrap](https://v4-alpha.getbootstrap.com/examples/) (ya incluidos en el ejercicio), agregue los elementos necesarios a la página para que sea más vistosa, y más cercana al mock dado al inicio del enunciado.
+
+![](img/Para%20la%20próxima%20semana/uno.PNG)
+
+![](img/Para%20la%20próxima%20semana/dos.PNG)
+
+![](img/Para%20la%20próxima%20semana/tres.PNG)
